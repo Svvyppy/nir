@@ -7,5 +7,7 @@ struct I2C_device {
 
 };
 int I2C_Init(struct I2C_device);
-int I2C_Read(struct I2C_device, int buffer, int size);
-int I2C_Write(struct I2C_device, int buffer, int size);
+int I2C_ReadReg8(struct I2C_device, int *buffer, int size);
+int I2C_ReadReg16(struct I2C_device, int *buffer, int size);
+
+
